@@ -104,7 +104,7 @@ class Player1():
                         board[i][int(place3[1])] = 1
                         self.count += 1
             if self.count >= 3 or self.count == 8:
-                print(self.count)
+                
                 print('ship placement valid')
                 valid = True
             else:
@@ -144,11 +144,7 @@ board1 = thing1.placement()
 thing2 = Player2('Charles')
 board2 = thing2.placement()
 
-for i in board1:
-    print(i)
-print('')
-for i in board2:
-    print(i)
+
 def hid_board(board):
     hid = []
     symbol = {1:'blank',0:'blank','hit':'hit','miss':'miss'}
